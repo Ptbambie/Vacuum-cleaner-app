@@ -1,27 +1,36 @@
-# VacuumCleanerApp
+Aspirateur Automatique
+Ceci est une application Angular simple qui simule le mouvement d'un aspirateur automatique sur une grille. L'utilisateur peut spécifier les dimensions de la grille, la position initiale de l'aspirateur et les instructions de déplacement. L'application affiche ensuite la position finale de l'aspirateur après avoir exécuté les instructions.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+Fonctionnalités
+Paramètres de grille : L'utilisateur peut spécifier les dimensions de la grille sur laquelle l'aspirateur se déplace.
+Position initiale : L'utilisateur peut spécifier la position initiale de l'aspirateur (coordonnées x, y) ainsi que son orientation (Nord, Est, Sud, Ouest).
+Instructions de déplacement : L'utilisateur peut fournir une séquence d'instructions (D pour tourner à droite, G pour tourner à gauche, A pour avancer) pour déplacer l'aspirateur sur la grille.
 
-## Development server
+Affichage de la position finale : L'application affiche la position finale de l'aspirateur après avoir exécuté les instructions.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Installation
+Cloner le dépôt GitHub : git clone <URL_DU_REPO>
+Accéder au répertoire du projet : cd vacuum-cleaner
+Installer les dépendances : npm install
 
-## Code scaffolding
+Utilisation
+Lancer l'application : ng serve
+Ouvrir un navigateur et accéder à l'URL suivante : http://localhost:4200
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Remplir les champs de paramètres :
+Dimension de la grille (x, y)
+Position initiale de l'aspirateur (x, y, orientation)
+Instructions de déplacement
+Cliquez sur le bouton "Valider" pour exécuter les instructions.
+La position finale de l'aspirateur sera affichée si les paramètres correspondent aux valeurs attendues.
 
-## Build
+Exemple
+Dimension de la grille : x=10, y=10
+Position initiale de l'aspirateur : x=5, y=5, orientation=Nord
+Instructions de déplacement : DADADADAA
+Résultat attendu : Position finale de l'aspirateur : x=5, y=6, orientation=Nord
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Notes
+L'application utilise Angular et Angular CLI. Assurez-vous d'avoir Angular CLI installé avant d'exécuter l'application.
+Les paramètres de grille, la position initiale et les instructions de déplacement sont validés pour correspondre aux valeurs attendues. Si les paramètres ne correspondent pas, la position finale ne sera pas affichée.
+N'hésitez pas à adapter ce modèle en fonction des spécificités de votre application et à ajouter toutes les informations supplémentaires pertinentes.

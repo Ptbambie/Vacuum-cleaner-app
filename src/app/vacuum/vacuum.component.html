@@ -1,0 +1,21 @@
+<h2>Vacuum Component</h2>
+
+<div>
+  <label for="xCoordinate">Coordinate X:</label>
+  <input id="xCoordinate" type="number" [(ngModel)]="coordinate.x" />
+</div>
+
+<div>
+  <label for="yCoordinate">Coordinate Y:</label>
+  <input id="yCoordinate" type="number" [(ngModel)]="coordinate.y" />
+</div>
+
+<div>
+  <label for="orientation">Orientation:</label>
+  <select id="orientation" [(ngModel)]="coordinate.orientation">
+    <option value="N">N</option>
+    <option value="E">E</option>
+    <option value="W">W</option>
+    <option value="S">S</option>
+  </select>
+</div>
